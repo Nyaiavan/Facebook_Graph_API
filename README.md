@@ -5,11 +5,9 @@ Group project for Facebook Graph API
 
 # Group Members & Roles
 
-| Name                    | Role                               |
-| Llena,  John Patrick B. | API & Authentication Handler       |
-|                         | GitHub & Documentation Manager     |
-| Versoza, Jhon Paul D.   | JavaScript Logic / Data Processing |
-| Dumaquit, Rachelle Ann  | UI & CSS Designer                  |
+*  Llena,  John Patrick B. -  API & Authentication Handler,  GitHub & Documentation Manager
+* Versoza, Jhon Paul D.    -  JavaScript Logic / Data Processing
+* Dumaquit, Rachelle Ann   -  UI & CSS Designer 
 
 
 # 1. Base URL
