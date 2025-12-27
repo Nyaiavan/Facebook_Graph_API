@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Graph API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- DARK MODE TOGGLE -->
+<button class="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+
+<div class="container">
+
+  <!-- LOGIN SECTION -->
+  <div class="login-box" id="login-box">
+    <div class="login-header">
+      <i class="fab fa-facebook-f fb-logo-header"></i>
+      <h2>Facebook Login</h2>
+    </div>
+    <div class="login-content">
+      <button class="login-btn fb-btn" onclick="loginWithFacebook()">
+        <i class="fab fa-facebook-f"></i>
+        <span>Continue with Facebook</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- LOADING STATE -->
+  <div class="loading" id="loading" style="display:none;">
+    <div class="spinner"></div>
+    <p>Authenticating...</p>
+  </div>
+
+  <!-- PROFILE SECTION -->
+  <div class="profile" id="profile" style="display:none;">
+    <div class="profile-card">
+      <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+
+      <div class="profile-top">
+        <img id="profile-picture" class="profile-picture" alt="Profile Picture">
+        <div class="profile-text">
+          <h2 id="profile-name"></h2>
+          <p id="profile-email"></p>
+          <p><strong>ID:</strong> <span id="profile-id"></span></p>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <p><strong>Birthday:</strong> <span id="profile-birthday"></span></p>
+        <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+      </div>
+      <div class="info-row">
+        <p><strong>Location:</strong> <span id="profile-location"></span></p>
+        <p><strong>Friends:</strong> <span id="profile-friends"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ERROR MESSAGE -->
+  <div class="error" id="error" style="display:none;">
+    <div class="error-content">
+      <i class="fas fa-exclamation-circle"></i>
+      <p id="error-message"></p>
+      <button class="error-close-btn" onclick="hideError()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
